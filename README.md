@@ -7,8 +7,6 @@
 - It groups **similar data points** together into **K clusters**.
 - We just tell the machine: "**Make K groups**", and it figures out the best way.
 - **Example:** We want to arrange students into **3 study groups** based on their marks in Math and Science. K-Means will group similar students together based on scores.
-- K-Means doesn't use any labels - It just looks at **similarity**.
-- The algorithm may give **slightly different results** each time (random start).
 ---
 ### Required Python Packages
 - **`scikit-learn`** - To build machine learning models
@@ -37,7 +35,7 @@
 - Moves the center to the **middle of the group**.
 - Repeats until it stabilizes.
 ---
-### Expected Output Table (Clustered)
+### Expected Output Table
 
 | X  | Y  | Cluster |
 | -- | -- | ------- |
@@ -48,7 +46,12 @@
 | 10 | 11 | 0       |
 | 25 | 30 | 1       |
 
-- Cluster 0: **Middle Scorers**
-- Cluster 1: **High Scorers**
-- Cluster 2: **Low Scorers**
+- Group 0: **Middle Scorers**
+- Group 1: **High Scorers**
+- Group 2: **Low Scorers**
+---
+### Additional Insights :
+- K-Means doesn't use any labels. It just looks at **similarity**.
+- We have to decide the **K (number of groups)** ourselves.
+- The algorithm may give **slightly different results** each time (random start).
 ---
